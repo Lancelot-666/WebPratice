@@ -1,0 +1,62 @@
+#gcar #rect
+{
+    width: 200px;
+    height:100px;
+    background-color: green;
+    border-color: black;
+}
+
+#gcar img
+{
+    width: 50px;
+    height: 50px;
+    -webkit-animation: 'rotate1' 5s linear infinite;
+    animation: 'rotate1' 3 linear infinite;
+}
+#wheel1
+{
+    margin-right: 100px;
+}
+@keyframes rotate1
+{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+#gcar
+{
+    -webkit-animation: 'car_move' 5s linear infinite alternate;
+    animation: 'car_move' 3 linear infinite alternate;
+}
+@keyframes car_move
+{
+    from{margin-left: 0px;}
+    to{margin-left: 400px;}
+}
+#rcar
+{
+    width: 210px;
+    height:100px;
+    transition: 5s; 
+    animation: 'rotate1' 3 linear infinite;
+}
+#rcar #rect
+{
+    width: 200px;
+    height:100px;
+    background-color: red;
+    border-color: black;
+}
+#rcar img
+{
+    width: 50px;
+    height: 50px;
+    transition: 5s;
+}
+#rcar:hover
+{
+    margin-left: 420px;
+}
+#rcar:hover img
+{
+    transform: rotate(360deg);
+}

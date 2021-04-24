@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EX4</title>
+        <style>
+            .content
+            {
+                text-align: center;
+                background-color: bisque;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "content">
+            <h2>巴斯卡三角形</h2>
+            <div id = "out"></div>
+        </div>
+        <script>
+            var value = window.prompt("請輸入數字");
+            value = parseInt(value);
+            var content = '';
+            for(var i = 1; i <= value ; i++)
+            {
+                for(var j = 1 ; j <= i; j++)
+                {
+                    content += output( i-1, j-1 ) + " " ;
+                }
+                content += "<br>";
+                var box = document.getElementById("out");
+                box.innerHTML = content;
+            }
+            function output(a , b)
+            {
+                return P(a) / (P(b) * P(a-b));
+            }
+            function P(n)
+            {
+                var a = 1;
+                var i = 1;
+                while( i <= n)
+                {
+                    a*= i;
+                    i++;
+                }
+                return a;
+            }
+        </script>
+    </body>
+</html>

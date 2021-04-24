@@ -1,0 +1,53 @@
+div
+{
+    border: 1px solid ;
+    text-align: center;
+    margin: 20px;
+    margin-top: 0px;
+    color: white;
+}
+#BoxMargin
+{
+    border: 1px dotted ;
+    background-color: red;
+    -webkit-animation: 'color_change1' 3s linear infinite;
+    animation: 'color_change1' 1 linear infinite;
+}
+@keyframes color_change1
+{
+    0%{background-color: red;}
+    50%{background-color: blue;}
+}
+#BoxBorder
+{
+    background-color: orange;
+    -webkit-animation: 'color_change2' 3s linear infinite;
+    animation: 'color_change2' 1 linear infinite;
+}
+@keyframes color_change2
+{
+    0%{background-color: orange;}
+    50%{background-color: Indigo;}
+}
+#BoxPadding{
+    background-color: yellow;
+    -webkit-animation: 'color_change3' 3s linear infinite;
+    animation: 'color_change3' 1 linear infinite;
+}
+@keyframes color_change3
+{
+    0%{background-color: yellow;}
+    50%{background-color: purple;}
+}
+#BoxContent
+{
+    background-color: green;
+    padding-bottom: 150px;
+    -webkit-animation: 'color_change4' 3s linear infinite;
+    animation: 'color_change4' 1 linear infinite;
+}
+@keyframes color_change4
+{
+    0%{background-color: green;}
+    50%{background-color: black;}
+}
